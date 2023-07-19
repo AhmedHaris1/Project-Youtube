@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+:root {
+    --menu-bar-width:16vw;
+    --nav-bar-height:8vh;
+    --option-bar-height:50px;
+}
+
+.mousePointer:hover {
+    cursor: pointer;
+}
+
+.bgHover:hover {
+    background-color:rgba(83, 79, 79, 0.973);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.93);
+}
+
+nav {
+    width: 100vw;
+    height: var(--nav-bar-height);
+    display: flex;
+}
+
+.bars {
+    border-radius: 50%;
+}
+
+.bars img {
+    width: 2vw;
+    height: 4.5vh;
+    margin: 15px 15px;
+    border-radius: 25%;
+}
+
+.ytLogo {
+    display: flex;
+}
+
+.ytLogo img{
+    width: 2.25vw;
+    margin: 10px 0 10px 20px;
+    display: inline-block;
+}
+
+.ytLogo p {
+    font-size: 4.5vh;
+    margin: 13px 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.604);
+}
+
+.ytLogo p sup {
+    font-size: 15px;
+}
+
+.sBar {
+    width: 39vw;
+    display: flex;
+    margin: 1.5vh 0 1.5vh 18vw;
+    border: 1px solid rgb(141, 123, 123);
+    border-radius: 20px;
+}
+
+.sBar input {
+    background: transparent;
+    border: 1px solid rgb(141, 123, 123);
+    font-size: large;
+    color: white;
+    width: 36vw;
+    border-radius: 17px 0 0 19px;
+}
+
+.sBar img {
+    padding: 5px 20px;
+    border-radius: 0 15px 15px 0;
+    background-color:rgba(32, 32, 32, 0.553);
+
+}
+
+.mike img {
+    width: 2vw;
+    height: 4vh;
+    margin: 1.7vh 1vw 2vh .5vw;
+    background-color:rgba(32, 32, 32, 0.973);
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.creat img {
+    width: 3vw;
+    height: 5vh;
+    margin: 1vh 0 1vh 7vw; 
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.bell img {
+    width: 2vw;
+    height: 4vh;
+    margin: 1.5vh 1vw 1vh 1vw; 
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.email img {
+    width: 2vw;
+    height: 4vh;
+    border-radius: 50%;
+    margin: 2vh 0;
+}
+
+.container {
+    display: flex;
+    position: relative;
+}
+
+.menuBar {
+    height: calc(100vh - 60px);
+    width: var(--menu-bar-width);
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(255, 255, 255);
+    overflow-y: scroll;
+    position: fixed;
+}
+
+.menuBar ul li {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin: 1px 15px 1px 10px;
+    padding: 3px 0;
+    border-radius: 15px;
+}
+
+.menuBar ul li img {
+    width: 1.5vw;
+    height: 3vh;
+    margin: 10px 20px;
+}
+
+.menuBar ul hr {
+    margin: 10px;
+    color: rgb(52, 48, 48)
+}
+
+.menuBar ul h3 {
+    margin: 15px 30px;
+}
+
+.subImgs img {
+    border-radius: 50%;
+}
+
+.menuBar p {
+    margin: 25px;
+    line-height: 30px;
+}
+
+.options {
+    width: calc(100vw - var(--menu-bar-width));
+    height: var(--option-bar-height);
+    position:absolute;
+    left: var(--menu-bar-width);
+}
+
+.options ul {
+    list-style: none;
+    display: flex;
+    overflow: scroll;
+}
+
+.options ul {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.options ul::-webkit-scrollbar {
+    display: none;
+}
+
+.options ul li {
+    background-color:rgba(83, 79, 79, 0.973);
+    padding: 5px;
+    margin: 10px;
+    white-space: nowrap;
+    border-radius: 10px;
+}
+
+.options ul li:hover {
+    background-color:rgb(121, 120, 120);   
+}
+
+.videoContainer {
+    width: calc(100vw - var(--menu-bar-width));
+    height: calc(100vh - var(--nav-bar-height) - var(--option-bar-height));
+    margin-top: var(--option-bar-height);
+    margin-left: var(--menu-bar-width);
+}
+
+.vidRow {
+    display: flex;
+    height: 350px;
+    width: 100%;
+    overflow: scroll;
+    margin: 30px 0;
+}
+
+.vidRow {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.vidRow::-webkit-scrollbar {
+    display: none;
+}
+
+.video {
+    width: 300px;
+    height: 230px;
+    margin: 50px 45px;
+    border-radius: 20px 20px 0 0;
+}
+
+.video:hover img{
+    transform: scale(1.03, 1.03);
+}
+
+.video img {
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.title {
+    width: 300px;
+    height: 50px;
+    display: flex;
+}
+
+.title img {
+    width: 40px;
+    height: 40px;
+    margin: 5px 10px;
+}
+
+.title p {
+    font-size: medium;
+    margin: 5px;
+    color: white;
+}
+
+.final {
+    width: 300px;
+    height: 30px;
+}
+
+.final p {
+    font-size: small;
+    margin: -8px 65px;
+    color: rgba(255, 255, 255, 0.571);
+}

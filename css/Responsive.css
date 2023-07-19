@@ -1,0 +1,48 @@
+@media screen and (max-width:1710px) {
+    .video {
+        margin: 20px 20px;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .menuBar {
+        display: none;
+    } 
+
+    .options {
+        width: 100vw;
+        left: 0;
+    }
+
+    .videoContainer {
+        width: 100vw;
+        margin-left: 0px;
+    }
+
+    .vidRow {
+        margin-bottom: -50px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .video {
+        margin: 5px;
+    }
+
+    .sBar {
+        margin: 1vh 0 1vh 7vw;
+    }
+
+    .sBar img {
+        padding: 5px 5px;
+    }
+
+    .options ul li {
+        margin: 5px;
+    }
+
+    .vidRow {
+        margin: 10px 0;
+        margin-bottom: -80px;
+    }
+}
